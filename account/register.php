@@ -137,7 +137,7 @@ _gaq.push(['_trackPageview']);
 				else
 				{
 					// Register Server
-					$register	= $connect->AuthQuery("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('{$username}),'{$sha_pass_hash_server}','{$email}')");
+					$register	= $connect->AuthQuery("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('{$username}'),'{$sha_pass_hash_server}','{$email}')");
 					$IdAccount	= $connect->AuthQuery("SELECT MAX(id) FROM account");
 					$IdWoW		= MysqliResultFlame($IdAccount);
 					// RBAC Account Permissions Server
@@ -672,7 +672,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}Â’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -723,10 +723,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'LoadingÂ…',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onÂ…',
+fansiteFindType: 'Find {0} onÂ…',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -737,7 +737,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'Â…'
 };
 Msg.fansite= {
 achievement: 'achievement',
@@ -807,7 +807,7 @@ var jsonSearchHandlerUrl = '\//eu.battle.net';
 var Msg = Msg || {};
 Msg.support = {
 ticketNew: 'Ticket {0} was created.',
-ticketStatus: 'Ticket {0}’s status changed to&#160;{1}.',
+ticketStatus: 'Ticket {0}Â’s status changed to&#160;{1}.',
 ticketOpen: 'Open',
 ticketAnswered: 'Answered',
 ticketResolved: 'Resolved',
@@ -858,10 +858,10 @@ submit: 'Submit',
 cancel: 'Cancel',
 reset: 'Reset',
 viewInGallery: 'View in gallery',
-loading: 'Loading…',
+loading: 'LoadingÂ…',
 unexpectedError: 'An error has occurred',
-fansiteFind: 'Find this on…',
-fansiteFindType: 'Find {0} on…',
+fansiteFind: 'Find this onÂ…',
+fansiteFindType: 'Find {0} onÂ…',
 fansiteNone: 'No fansites available.',
 flashErrorHeader: 'Adobe Flash Player must be installed to see this content.',
 flashErrorText: 'Download Adobe Flash Player',
@@ -872,7 +872,7 @@ Msg.grammar= {
 colon: '{0}:',
 first: 'First',
 last: 'Last',
-ellipsis: '…'
+ellipsis: 'Â…'
 };
 Msg.fansite= {
 achievement: 'achievement',
