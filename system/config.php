@@ -90,6 +90,7 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
+define('REALMLIST',		'http://wowserver.sytes.net/');
 define('BASE_URL',		'http://wowserver.sytes.net/');
 define('ADMIN_URL',		'http://wowserver.sytes.net/admin/');
 define('ACCOUNT_URL',	'http://wowserver.sytes.net/account/');
