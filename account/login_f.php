@@ -5,7 +5,8 @@ if(isset($_POST['submit']))
 	$email			= trim($_POST['accountName']);
 	$password		= trim($_POST['password']);
     $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
-	$query			= $connect->WebQuery("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}' AND activation_code IS NULL");
+  //$query			= $connect->WebQuery("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}' AND activation_code IS NULL");
+	$query			= $connect->WebQuery("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}'");
 	$num_row		= $query->num_rows;
 	$row			= $query->fetch_array();
 	if( $num_row ==1 )
@@ -116,12 +117,12 @@ aria-labelledby="password-label" id="password" name="password" title="Password" 
 <label id="persistLogin-label" class="checkbox-label css-label " for="persistLogin">
 <input aria-labelledby="persistLogin-label" id="persistLogin" name="persistLogin" type="checkbox" checked="checked" tabindex="1"/>
 <span class="input-checkbox"></span>
-Keep me logged in
+No cerrar sesi&oacute;n
 </label>
 </div>
 <div class="control-group submit ">
 <button type="submit" id="submit" name="submit" class="btn btn-primary btn-large btn-block " data-loading-text="" tabindex="1">
-Log In
+Iniciar sesion
 <i class="spinner-battlenet"></i>
 </button>
 </div>
@@ -133,13 +134,13 @@ function register(){
 };
 </script>
 <a class="btn btn-block btn-large" rel="external" tabindex="1" onclick="register()">
-Create Free Account
+Crear cuenta
 <i class="icon-external-link"></i>
 </a>
 </li>
 <li>
-<a class="" rel="external" href="#" tabindex="1">
-Can&#39;t log in?
+<a class="" rel="external" href="forum" tabindex="1">
+Problemas con tu cuenta?
 <i class="icon-external-link"></i>
 </a>
 </li>
@@ -147,7 +148,7 @@ Can&#39;t log in?
 <input type="hidden" id="csrftoken" name="csrftoken" value="2df954fc-4fdb-4a7a-82c4-d1d42819f288" />
 </form>
 </div>
-<footer class="footer footer-us">
+<!--<footer class="footer footer-us">
 <div class="lower-footer-wrapper">
 <div class="lower-footer">
 <div id="copyright">
@@ -156,11 +157,11 @@ Can&#39;t log in?
 <a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Legal">Legal</a>
 <a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Privacy Policy">Privacy Policy</a>
 <a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Copyright Infringement">Copyright Infringement</a>
-</div>
-<div id="legal">
+</div>-->
+<!--<div id="legal">
 <div id="legal-ratings" class="png-fix">
 </div>
-<span class="clear"><!-- --></span>
+<span class="clear"> </span>
 </div>
 </div>
 <div id="marketing-trackers">
@@ -176,8 +177,8 @@ Core.bindTrackEvent('#copyright a[data-action]', category);
 });
 //]]>
 </script>
-</footer> </div>
-<script src="<?php echo BASE_URL ?>assets/login/static/js/embedded-javascript/embed-0.1.5.min.js"></script>
+</footer>--> </div>
+<!--<script src="<?php echo BASE_URL ?>assets/login/static/js/embedded-javascript/embed-0.1.5.min.js"></script>-->
 <script>
 //<![CDATA[
 var xsToken = '';

@@ -2,7 +2,7 @@
 <?php require_once('../system/config.php');
 $account->AccountLoginQuery();
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
+<html xml:lang="en-us" class="en-us">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -11,7 +11,7 @@ $account->AccountLoginQuery();
 <!-- Description of CMS -->
 <?php include(__WEBKIT__.'desc.php'); ?>
 <!-- Description of CMS END -->
-<title><?php echo TITLE ?> | Shop</title>
+<title>Tienda - <?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/common-game-site.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/wow.css" />
@@ -23,78 +23,66 @@ $account->AccountLoginQuery();
 <script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/common-game-site.js?v=58-62"></script>
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/css/legal/ratings.css?v=58-62" />
 </head>
-<!-- The Styles & Javascripts of the CMS END -->
-</head>
-<body class="en-gb homepage news">
+<body class="en-us media-home">
 <div id="wrapper">
 <!-- User Panel -->
-<?php include(__WEBKIT__.'userpanel.php'); ?>
+<?php include(WEBKIT.'userpanel.php'); ?>
 <!-- User Panel END -->
 <div id="header">
 <!-- Search -->
-<?php include(__WEBKIT__.'search.php'); ?>
+<?php include(WEBKIT.'search.php'); ?>
 <!-- Search END -->
 <h1 id="logo"><a href="<?php echo BASE_URL ?>"><?php echo TITLE ?></a></h1>
 <!-- Header -->
 <div class="header-plate">
 <?php
 $page = "menu-services";
-include(__WEBKIT__.'menu.php');
-include(__WEBKIT__.'userplate.php');?>
+include(WEBKIT.'menu.php');
+include(WEBKIT.'userplate.php');?>
 </div>
 <!-- Header END -->
 </div>
-<div class="services-home">
 <div id="content">
 <div class="content-top body-top">
-<!-- Content Trail -->
-<?php include(__WEBKIT__.'breadcrumb.php'); ?>
-<!-- Content Trail END -->
+<div class="content-trail">
+<ol class="ui-breadcrumb">
+<li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<a href="/" rel="np" class="breadcrumb-arrow" itemprop="url">
+<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?></span>
+</a>
+</li>
+<li class="last" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+<a href="" rel="np" itemprop="url">
+<span class="breadcrumb-text" itemprop="name">Tienda</span>
+</a>
+</li>
+</ol>
+</div>
 <div class="content-bot clear">
 <div class="wod-no-banner"></div>
 <div id="wiki" class="wiki directory wiki-index">
-<div class="panel game-subscriptions">
-<h2 class="header">Shop & Donating<a class="panelLink" href="main.php">Explore Options</a></h2>
-<div class="subscription-col subscription-1">
-<a href="#" class="game-title">
-<span class="tooltip" data-tooltip="#wow-battlechest-tooltip" data-tooltip-options='{"location": "mouse"}' style="visibility:hidden"></span>
-</a>		
-<a class="ui-button button1" href="#">
-<span class="button-left"><span class="button-right">Recruit's</span></span></a>
-<a class="ui-button button5" href="#">
-<span class="button-left"><span class="button-right">Main Shop</span></span></a>
-<a href="#" class="subNow"><div class="subNowIcon"></div>Donate</a>
-</div>
-<div class="subscription-col subscription-3">
-<a href="#" class="game-title">Vote Shop</a>
-<a class="ui-button button1" href="#"><span class="button-left"><span class="button-right">Vote Now!</span></span></a>
-<br/>
-</div>
-<p class="subscription-desc"><?php echo TITLE ?> is an emulated online fantasy adventure that is composed of a core game and database which are expensive to hold. Help us by <a href="#">Voting to our site</a> or donating so that we can maintain those services that we provide for free. Because Free Stuff? Hell yeah!</p>
-<span class="clear"><!-- --></span>
-</div>
 <div class="panel free-paid-services">
 <div id="free-services" class="services-column">
-<h2 class="header">Free Services</h2>
+<h2 class="header">Servicios gratuitos</h2>
 <ul>
 <li>
 <a href="#" class="free-services-raf">
-<span>Recruit-A-Friend</span>
+<span>Reclutar un amigo</span>
 </a>
 </li>
 <li>
 <a href="#" class="free-services-item-restoration">
-<span>Item Restoration</span>
+<span>Tienda de Votos</span>
 </a>
 </li>
 <li>
 <a href="#" class="free-services-mobile-armory">
-<span>WoW Mobile Armory</span>
+<span>Donar via SMS</span>
 </a>
 </li>
 <li>
 <a href="#" class="free-services-security">
-<span>Account Security</span>
+<span>Seguridad de tu cuenta</span>
 </a>
 </li>
 </ul>
@@ -138,24 +126,59 @@ include(__WEBKIT__.'userplate.php');?>
 <span>Recruit a friend,<br/>Earn epic rewards!</span>
 </a>
 </div>
+
+<div class="panel game-subscriptions">
+<h2 class="header">Tienda y Donaciones<a class="panelLink" href="main.php">Lea los T&eacute;rminos y Condiciones</a></h2>
+<p class="subscription-desc"><?php echo TITLE ?> es un servidor privado del videojuego de multijugador masivo World of Warcraft, el cual promete mantener sus servicios siempre activos, mas sin embargo, no esta libre de fallos y caidas asi como errores y problemas que puedan surgir a futuro. Ayudanos con tus <a href="#">donaciones</a> y <a href="#">votar por el server</a> para poder seguir brindando un servicio de calidad, solo con tu ayuda seguiremos creciendo y brindando el servicio que tu te mereces.
+</p>
+<br>
+<div class="subscription-col subscription-1">
+<a href="" class="game-title">
+<span class="tooltip" data-tooltip="#wow-battlechest-tooltip" data-tooltip-options='{"location": "mouse"}' style="visibility:hidden"></span>
+</a>		
+<a class="ui-button button1" href="">
+<span class="button-left"><span class="button-right">Tienda de Votacion</span></span>
+</a>
+<!--<a class="ui-button button5" href="">
+<span class="button-left"><span class="button-right">Tienda de Votacion</span></span>
+</a>
+<a href="#" class="subNow"><div class="subNowIcon"></div>
+</a>-->
+</div>
+<div class="subscription-col subscription-3">
+<a href="" class="game-title">
+<span class="tooltip" data-tooltip="#wow-battlechest-tooltip" data-tooltip-options='{"location": "mouse"}' style="visibility:hidden"></span>
+</a><br>		
+<a class="ui-button button5" href="">
+<span class="button-left"><span class="button-right">Tienda de Donacion</span></span>
+</a>
+<!--<a class="ui-button button5" href="">
+<span class="button-left"><span class="button-right">Tienda de Donacion</span></span>
+</a>
+<a href="#" class="subNow"><div class="subNowIcon"></div>
+</a>-->
+</div>
+<!--<div class="subscription-col subscription-3">
+<a href="#" class="game-title"></a>
+<a class="ui-button button1" href="#"><span class="button-left"><span class="button-right">Donar ahora!</span></span></a>
+<br/>
+<a class="ui-button button1" href="#">
+<span class="button-left"><span class="button-right">Votar ahora</span></span>
+</a>
+<a class="ui-button button5" href="#">
+<span class="button-left"><span class="button-right">Tienda de Votacion</span></span>
+</a>
+</div>-->
+<span class="clear"><!-- --></span>
+</div>
+
 <div class="panel pet-mount">
-<h2 class="header">Pets, Mounts, and Helms<a class="panelLink" href="main.php">View All</a>
+<h2 class="header">Monturas, Mascotas y Armaduras<a class="panelLink" href="main.php">Ver todo</a>
 </h2>
 <div class="product-block">
 <div id="pet-mount-list" class="companion-container" style="width: 3114px;">
-<a href="#" class="product-item crown-of-eternal-winter" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
-<span class="thumb"></span>
-<span class="name">Crown of <br />Eternal Winter</span>
-</a>
-<a href="#" class="product-item hood-of-hungering-darkness" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
-<span class="thumb"></span>
-<span class="name">Hood of<br />Hungering Darkness</span>
-</a>
-<a href="#" class="product-item jewel-of-the-firelord" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
-<span class="thumb"></span>
-<span class="name">Jewel of<br />the Firelord</span>
-</a>
-<a href="#" class="product-item blossoming-ancient" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+
+<!--<a href="#" class="product-item blossoming-ancient" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
 <span class="name">Blossoming<br /> Ancient</span>
 </a>
@@ -163,31 +186,47 @@ include(__WEBKIT__.'userplate.php');?>
 <span class="thumb"></span>
 <span class="name">Armored<br /> Bloodwing</span>
 </a>
-<a href="#" class="product-item heart-of-the-aspects" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
-<span class="thumb"></span>
-<span class="name">Heart of<br />the Aspects</span>
-</a>
 <a href="#" class="product-item cinder-kitten" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
 <span class="name">Cinder<br />Kitten</span>
+</a>-->
+<a href="#" class="product-item heart-of-the-aspects" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<span class="thumb"></span>
+<span class="name">Monturas<br />voladoras (310%)</span>
 </a>
 <a href="#" class="product-item celestial-steed" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
-<span class="name">Celestial<br />Steed</span>
-</a>
-<a href="#" class="product-item swift-windsteed" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
-<span class="thumb"></span>
-<span class="name">Swift<br />Windsteed</span>
+<span class="name">Monturas<br />duales</span>
 </a>
 <a href="#" class="product-item winged-guardian" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
-<span class="name">Winged<br />Guardian</span>
+<span class="name">Monturas<br />voladoras</span>
+</a>
+<a href="#" class="product-item swift-windsteed" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<span class="thumb"></span>
+<span class="name">Monturas<br />terrestres</span>
 </a>
 <a href="#" class="product-item pandaren-monk" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
 <span class="name">Pandaren<br />Monk</span>
 </a>
-<a href="#" class="product-item lil-ragnaros" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<a href="#" class="product-item crown-of-eternal-winter" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<span class="thumb"></span>
+<span class="name">Armaduras <br />de Tanque</span>
+</a>
+<a href="#" class="product-item jewel-of-the-firelord" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<span class="thumb"></span>
+<span class="name">Armaduras<br />de Healer</span>
+</a>
+<a href="#" class="product-item hood-of-hungering-darkness" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<span class="thumb"></span>
+<span class="name">Armaduras<br />de DPS</span>
+</a>
+<a href="#" class="product-item moonkin-hatchling-alliance" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
+<span class="thumb"></span>
+<span class="name">Proximamente<br />habr&aacute; m&aacute;s...</span>
+</a>
+<!--<a href="#" class="product-item lil-ragnaros" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
 <span class="name">Lil<br />Ragnaros</span>
 </a>
@@ -214,7 +253,7 @@ include(__WEBKIT__.'userplate.php');?>
 <a href="#" class="product-item soul-of-the-aspects" data-tooltip="Buy Now" data-tooltip-options="{&quot;location&quot;: &quot;mouse&quot;}">
 <span class="thumb"></span>
 <span class="name">Soul of<br />the Aspects</span>
-</a>
+</a>-->
 </div>
 </div>
 <a href="javascript:;" class="nav-button nav-prev" onclick="CompanionSlider.move(1);" style="display: none;"></a>
@@ -270,7 +309,6 @@ include(__WEBKIT__.'userplate.php');?>
 		//]]>
 </script>
 <span class="clear"><!-- --></span>
-</div>
 </div>
 </div>
 </div>
@@ -395,10 +433,12 @@ other: 'Other'
 <script type="text/javascript">
 //<![CDATA[
 $(function() {
-Menu.initialize(__ROOT__.'/assets/data/menu.json');
+Menu.initialize('assets/data/menu.json');
 });
 //]]>
 </script>
+
+<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/utility/slideshow.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/cms.min.js"></script>
 </body>
 </html>
