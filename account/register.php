@@ -45,7 +45,7 @@ Core.shortDateFormat = 'dd/MM/yyyy';
 Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = '<?php echo ACCOUNT_URL ?>login';
+Login.embeddedUrl = '<?php echo CUENTA_URL ?>login';
 var Flash = Flash || {};
 Flash.videoPlayer = '';
 Flash.videoBase = '';
@@ -72,7 +72,7 @@ _gaq.push(['_trackPageview']);
 			<h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>
 			<div id="navigation">
 				<div id="page-menu" class="large">
-					<h2><a href="<?php echo ACCOUNT_URL ?>#"> <?php echo $cms_lang['13']; ?>
+					<h2><a href="<?php echo CUENTA_URL ?>#"> <?php echo $cms_lang['13']; ?>
 					</a></h2>
 					<h2 class="second-header"></h2>
 					<span class="clear">
@@ -132,7 +132,7 @@ _gaq.push(['_trackPageview']);
 					<center>
 						<p class="text-red title">This Email is already used.</p>
 					</center>
-					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
+					<meta http-equiv="refresh" content="2;url='.CUENTA_URL.'register"/>';
 				}
 				else
 				{
@@ -143,19 +143,9 @@ _gaq.push(['_trackPageview']);
 					// RBAC Account Permissions Server
 					$register	= $connect->AuthQuery("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '{$IdWoW}','195')");
 					// Register CMS
-					$createAccount	= $connect->WebQuery("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})");
-					if($createAccount)
-					{
-						$to		  = $email;
-						$subject  = "Confirmation from ".TITLE." to ".$firstName." ".$lastName."";
-						$header   = ": Confirmation from ".TITLE."";
-						$message  = "Please click the link below to verify and activate your account. rn";
-						$message .= "".BASE_URL."confirm?passkey=".$code."";
+					$createAccount	= $connect->WebQuery("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})'");
 
-						$sentmail = mail($to,$subject,$message,$header);
-
-						if($sentmail)
-						{
+						if($createAccount){
 						echo '
 						<div class="alert-page ">
 							<div class="alert-page-message success-page">
@@ -178,7 +168,7 @@ _gaq.push(['_trackPageview']);
 									</p>
 									<h6>You will log in with this email address.</h6>
 									<p>
-										You will be asked for this address when logging into the Battle.net application, web sites, or game clients. You can change this address any time in <a href="'.ACCOUNT_URL.'login" tabindex="1">Account Management</a>.
+										You will be asked for this address when logging into the Battle.net application, web sites, or game clients. You can change this address any time in <a href="'.CUENTA_URL.'login" tabindex="1">Account Management</a>.
 									</p>
 								</div>
 							</div>
@@ -190,13 +180,12 @@ _gaq.push(['_trackPageview']);
 						{
 							echo '<p class="text-red title"><strong>Cannot send Confirmation link to your e-mail address</strong></p>';
 						}
-					}
 				}
 			}else{
 				echo'<center>
 						<p class="text-red title">Email invalid</p>
 					</center>
-					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
+					<meta http-equiv="refresh" content="2;url='.CUENTA_URL.'register"/>';
 			}
 		}else{
 		?>
@@ -237,8 +226,8 @@ _gaq.push(['_trackPageview']);
 						<div id="countryGlobal" class="input-note-content">
 							<p class="caption"><?php echo $cms_lang['101']; ?></p>
 							<p>
-								<a class="ui-button button1" href="<?php echo ACCOUNT_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
-								<a class="ui-cancel " href="<?php echo ACCOUNT_URL ?>register" tabindex="1">
+								<a class="ui-button button1" href="<?php echo CUENTA_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
+								<a class="ui-cancel " href="<?php echo CUENTA_URL ?>register" tabindex="1">
 								<span>
 								<?php echo $cms_lang['68']; ?> </span>
 								</a>
@@ -248,8 +237,8 @@ _gaq.push(['_trackPageview']);
 							<p class="caption"><?php echo $cms_lang['102']; ?></p>
 							<p>
 								<a class="ui-button button1" href="?country=CHINA" id="stayTaiwan" tabindex="1"><span class="button-left"><span class="button-right">YES, I HAVE A TAIWANESE WORLD OF WARCRAFT ACCOUNT</span></span></a><br/>
-								<a class="ui-button button1" href="<?php echo ACCOUNT_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
-								<a class="ui-cancel " href="<?php echo ACCOUNT_URL ?>register" tabindex="1">
+								<a class="ui-button button1" href="<?php echo CUENTA_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
+								<a class="ui-cancel " href="<?php echo CUENTA_URL ?>register" tabindex="1">
 								<span>
 								<?php echo $cms_lang['68']; ?> </span>
 								</a>
