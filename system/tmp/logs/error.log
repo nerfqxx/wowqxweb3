@@ -30,3 +30,10 @@
 [11-Feb-2016 20:34:27 America/Costa_Rica] PHP Notice:  Use of undefined constant REALMLIST - assumed 'REALMLIST' in D:\xampp\wowqxweb3\system\webkit\sidebar.php on line 52
 [11-Feb-2016 20:37:03 America/Costa_Rica] PHP Notice:  Use of undefined constant REALMLIST - assumed 'REALMLIST' in D:\xampp\wowqxweb3\system\webkit\sidebar.php on line 52
 [11-Feb-2016 20:38:27 America/Costa_Rica] PHP Notice:  Use of undefined constant REALMLIST - assumed 'REALMLIST' in D:\xampp\wowqxweb3\system\webkit\sidebar.php on line 52
+[11-Feb-2016 21:27:55 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 21:27:55 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 21:27:55 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 21:28:01 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 21:28:01 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 21:28:01 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 21:39:56 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39

@@ -143,7 +143,7 @@ _gaq.push(['_trackPageview']);
 					// RBAC Account Permissions Server
 					$register	= $connect->AuthQuery("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '{$IdWoW}','195')");
 					// Register CMS
-					$createAccount	= $connect->WebQuery("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})'");
+					$createAccount	= $connect->WebQuery("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}', UPPER('{$answer}'),'{$country}','{$dob}','{$code}')");
 
 						if($createAccount){
 						echo '
