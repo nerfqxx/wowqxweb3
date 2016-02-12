@@ -24,7 +24,7 @@ define('LANGUAGE',	'es');
 | Under Heavy Work. Please do not touch.
 |--------------------------------------------------------------------------|
 */
-define('TITLE',		'WoW Qx');
+define('TITLE',		'WoW Qx Server');
 define('FACEBOOK', 	'https://www.facebook.com/');
 define('TWITTER',  	'https://twitter.com/');
 define('YOUTUBE',  	'https://www.youtube.com/');
@@ -93,6 +93,7 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 define('REALMLIST',		'http://wowserver.sytes.net/');
 define('BASE_URL',		'http://wowserver.sytes.net/');
 define('ADMIN_URL',		'http://wowserver.sytes.net/admin/');
+define('CUENTA_URL',	'http://wowserver.sytes.net/account/');
 define('ACCOUNT_URL',	'http://wowserver.sytes.net/account/');
 define('TIMEZONE',		'America/Costa_Rica');
 
