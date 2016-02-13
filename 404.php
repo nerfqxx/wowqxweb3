@@ -69,7 +69,7 @@ include(WEBKIT.'userplate.php');?>
 <ol class="ui-breadcrumb">
 <li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 <a href="/" rel="np" class="breadcrumb-arrow" itemprop="url">
-<span class="breadcrumb-text" itemprop="name">World of Warcraft</span>
+<span class="breadcrumb-text" itemprop="name">WoW Qx Server</span>
 </a>
 </li>
 <li class="last" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">

@@ -81,8 +81,8 @@ define('WORLD',			'world_lk');
 */
 define('SOAP_IP',		'127.0.0.1');
 define('SOAP_PORT', 	'7878');
-define('SOAP_USER', 	'rou');
-define('SOAP_PASS', 	'michelle013');
+define('SOAP_USER', 	'');
+define('SOAP_PASS', 	'');
 define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 
 /*
@@ -90,7 +90,7 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 | Info: DO NOT TOUCH THESE UNLESS YOU KNOW WHAT YOU ARE DOING.
 |--------------------------------------------------------------------------|
 */
-define('REALMLIST',		'http://wowserver.sytes.net/');
+define('REALMLIST',		'wowserver.sytes.net');
 define('BASE_URL',		'http://wowserver.sytes.net/');
 define('ADMIN_URL',		'http://wowserver.sytes.net/admin/');
 define('CUENTA_URL',	'http://wowserver.sytes.net/account/');

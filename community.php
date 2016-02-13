@@ -68,13 +68,13 @@ include(WEBKIT.'userplate.php');?>
 			<div class="content-trail">
 				<ol class="ui-breadcrumb">
 					<li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-					<a href="http://us.battle.net/wow/en/" rel="np" class="breadcrumb-arrow" itemprop="url">
-					<span class="breadcrumb-text" itemprop="name">World of Warcraft</span>
+					<a href="/" rel="np" class="breadcrumb-arrow" itemprop="url">
+					<span class="breadcrumb-text" itemprop="name">WoW Qx Server</span>
 					</a>
 					</li>
 					<li class="last" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-					<a href="index.html" rel="np" itemprop="url">
-					<span class="breadcrumb-text" itemprop="name">Community</span>
+					<a href="/community" rel="np" itemprop="url">
+					<span class="breadcrumb-text" itemprop="name">Comunidad</span>
 					</a>
 					</li>
 				</ol>

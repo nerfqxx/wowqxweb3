@@ -37,3 +37,155 @@
 [11-Feb-2016 21:28:01 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
 [11-Feb-2016 21:28:01 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
 [11-Feb-2016 21:39:56 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[11-Feb-2016 22:09:17 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[11-Feb-2016 22:11:50 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 22:11:50 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 22:11:50 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[11-Feb-2016 22:22:24 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[11-Feb-2016 22:50:27 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[12-Feb-2016 02:31:31 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 02:31:31 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 02:31:31 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 04:59:41 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 04:59:41 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 04:59:41 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:00:29 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[12-Feb-2016 05:00:36 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\main.php on line 13
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\main.php on line 13
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\main.php on line 13
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\main.php on line 42
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(__WEBKIT__userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\main.php on line 42
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\main.php on line 42
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\main.php on line 155
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(__WEBKIT__rewards.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\main.php on line 155
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__rewards.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\main.php on line 155
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\main.php on line 169
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(__WEBKIT__footer_shop.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\main.php on line 169
+[12-Feb-2016 05:01:28 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__footer_shop.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\main.php on line 169
+[12-Feb-2016 05:03:45 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:03:45 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:03:45 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:02 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:02 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:02 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:03 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:03 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:03 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:07 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:07 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:07 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:14 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:14 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:14 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:18 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:18 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:18 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:22 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:22 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:22 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:26 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:26 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:26 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:30 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:30 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:30 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:34 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:34 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:04:34 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 05:09:59 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:09:59 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:09:59 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:09:59 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:09:59 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:02 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:02 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:02 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:02 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:02 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:05 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:05 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:05 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:05 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:05 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:09 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:09 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:09 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:09 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:09 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:26 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:26 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:26 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:26 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:26 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:30 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:30 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:30 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:30 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:30 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:38 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:38 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:38 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:38 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:38 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:42 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:42 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:42 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:42 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:42 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:47 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:47 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:47 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:47 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:47 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:15:55 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:55 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:15:55 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:55 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:15:55 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 05:16:12 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:16:12 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 05:16:12 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:16:12 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 05:16:12 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 09:28:00 America/Costa_Rica] PHP Notice:  Undefined index: email in D:\xampp\wowqxweb3\system\class\users.class.php on line 39
+[12-Feb-2016 09:59:15 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 09:59:15 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 09:59:15 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 10:01:44 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 10:01:44 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 10:01:44 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 11:54:17 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 11:54:17 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 11:54:17 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 12:43:57 America/Costa_Rica] PHP Warning:  include(../webkit/desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 12:43:57 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 11
+[12-Feb-2016 12:43:57 America/Costa_Rica] PHP Warning:  include(../webkit/userpanel.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 12:43:57 America/Costa_Rica] PHP Warning:  include(): Failed opening '../webkit/userpanel.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\account\confirm.php on line 88
+[12-Feb-2016 12:43:57 America/Costa_Rica] PHP Notice:  Undefined index: passkey in D:\xampp\wowqxweb3\account\confirm.php on line 103
+[12-Feb-2016 13:24:31 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:24:31 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:24:31 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:25:44 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:25:44 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:25:44 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:25:46 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:25:46 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:25:46 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:37:11 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:37:11 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 13:37:11 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 20:52:39 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 20:52:39 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 20:52:39 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:00 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:00 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:00 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:10 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:10 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:10 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:26 America/Costa_Rica] PHP Notice:  Use of undefined constant __WEBKIT__ - assumed '__WEBKIT__' in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:26 America/Costa_Rica] PHP Warning:  include(__WEBKIT__desc.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:11:26 America/Costa_Rica] PHP Warning:  include(): Failed opening '__WEBKIT__desc.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\shop\index.php on line 12
+[12-Feb-2016 21:53:13 America/Costa_Rica] PHP Notice:  Undefined variable: characters in D:\xampp\wowqxweb3\system\class\connection.class.php on line 68
+[12-Feb-2016 21:53:13 America/Costa_Rica] PHP Fatal error:  Cannot access empty property in D:\xampp\wowqxweb3\system\class\connection.class.php on line 68
