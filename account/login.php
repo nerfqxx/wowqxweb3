@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-		echo '<center>You have not activated your account</center>';
+		echo '<center><br><font color="red">El nombre de usuario o la contrase&ntilde;a es incorrecta.</font><br>Recuerda que debes iniciar sesion con tu correo electronico.</center>';
 	}
 }
 ?>
@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
 <meta http-equiv="imagetoolbar" content="false" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<title><?php echo TITLE ?> Account Login</title>
+<title>Inicio de Sesion - <?php echo TITLE ?></title>
 <link rel="shortcut icon" href="//bnetus-a.akamaihd.net/login/static/images/meta/favicon.2dy4z.ico" />
 <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/login/static/css/toolkit/bnet-web.min.css" /><!-- <![endif]-->
 <!--[if IE 8]><link rel="stylesheet" type="text/css" media="all" href="<?php echo BASE_URL ?>assets/login/static/css/toolkit/bnet-web-ie8.min.css" /><![endif]-->
@@ -83,7 +83,9 @@ $('body').removeClass('preload');
 //]]>
 </script>
 <div class="grid-container wrapper" >
-<h1 class="logo"><?php echo TITLE ?> Account Login</h1>
+<!--<h1 class="logo"><?php echo TITLE ?> Account Login</h1>-->
+<center><IMG SRC="<?php echo BASE_URL ?>assets/images/logos/b39931e67677c8bfe42eaf40cfe63ad2o.png"></center>
+<br>
 <div class="hide mobile-grid-35 mobile-prefix-10" id="info-wrapper">
 <h2><strong class="info-title"></strong></h2>
 <p class="info-body"></p>
@@ -108,25 +110,25 @@ aria-labelledby="password-label" id="password" name="password" title="Password" 
 <label id="persistLogin-label" class="checkbox-label css-label " for="persistLogin">
 <input aria-labelledby="persistLogin-label" id="persistLogin" name="persistLogin" type="checkbox" checked="checked" tabindex="1"/>
 <span class="input-checkbox"></span>
-Keep me logged in
+No cerrar sesi&oacute;n
 </label>
 </div>
 <div class="control-group submit ">
 <button type="submit" id="submit" name="submit" class="btn btn-primary btn-large btn-block " data-loading-text="" tabindex="1">
-Log In
+Iniciar sesi&oacute;n
 <i class="spinner-battlenet"></i>
 </button>
 </div>
 <ul id="help-links">
 <li>
 <a class="btn btn-block btn-large" rel="external" href="<?php ACCOUNT_URL ?>register" tabindex="1">
-Create Free Account
+Crear cuenta
 <i class="icon-external-link"></i>
 </a>
 </li>
 <li>
 <a class="" rel="external" href="#" tabindex="1">
-Can&#39;t log in?
+No puedes iniciar sesi&oacute;n?
 <i class="icon-external-link"></i>
 </a>
 </li>
@@ -134,21 +136,33 @@ Can&#39;t log in?
 <input type="hidden" id="csrftoken" name="csrftoken" value="2df954fc-4fdb-4a7a-82c4-d1d42819f288" />
 </form>
 </div>
+<br>
+
 <footer class="footer footer-us">
 <div class="lower-footer-wrapper">
-<div class="lower-footer">
+
+<div class="footer-links">
+<center>
 <div id="copyright">
-<span>&copy;2015 Blizzard Entertainment, Inc. All rights reserved</span>
-<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Terms of Use">Terms of Use</a>
-<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Legal">Legal</a>
-<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Privacy Policy">Privacy Policy</a>
-<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Copyright Infringement">Copyright Infringement</a>
+
+<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Terms of Use">Terminos y condiciones</a>
+<span>|</span>
+<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Legal">Reglamento del servidor</a>
+<span>|</span>
+<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Privacy Policy">Codigo de conducta</a>
+<span>|</span>
+<a onclick="return Core.open(this);" href="#" tabindex="100" data-action="Footer - Copyright Infringement">Derechos de autor</a>
+<br>
+<br>
+<span>&copy;WoW Qx Core, Reservados todos los derechos.<br>Todas las imagenes son propiedad de Blizzard Entertainment.</span>
 </div>
 <div id="legal">
 <div id="legal-ratings" class="png-fix">
 </div>
 <span class="clear"><!-- --></span>
+<a class="nav-item logo-link" href="/" ><img class="blizzard-logo" src="qxcore.png" alt="WoW Qx" /></a>
 </div>
+</center>
 </div>
 <div id="marketing-trackers">
 <div class="marketing-cover"></div>

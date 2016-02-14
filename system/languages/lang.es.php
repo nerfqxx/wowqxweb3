@@ -123,4 +123,6 @@ $cms_lang[99]	= "&iexcl;Oops! Este problema require tu atenci&oacute;n.";
 $cms_lang[100]	= "Cerrar";
 $cms_lang[101]	= "Si cambias el pa&iacute;s, aparecer&aacute;n campos de texto diferentes sobre la creaci&oacute;n de la cuenta y la direcci&oacute;n postal que quiz&aacute;s no concuerden con tu situaci&oacute;n actual. &iquest;Deseas continuar?";
 $cms_lang[102]	= "Te encuentras en el sitio web regional taiwan&eacute;s de Battle.net. S&oacute;lo los titulares de cuentas taiwanesas de World of Warcraft deber&aacute;n crear sus cuentas aqu&iacute;. Si tienes una cuenta china de World of Warcraft, visita Battle.net china.";
-
+$cms_lang[103]	= "Inicia sesion";
+$cms_lang[104]	= " para mejorar y personalizar tu experiencia!";
+$cms_lang[105]	= "Cerrando su sesi&oacute;n, porfavor espera...";

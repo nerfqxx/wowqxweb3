@@ -10,7 +10,7 @@ require_once('../system/config.php');
 <!-- Description of CMS -->
 <?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
-<title>Sign Out <?php echo TITLE ?></title>
+<title><?php echo$cms_lang[105];?> - <?php echo TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <link rel="shortcut icon" href="<?php echo BASE_URL ?>assets/images/logos/favicon.png"/>
 <link rel="search" type="application/opensearchdescription+xml" href="en-gb/data/opensearch" title="Battle.net Search"/>
@@ -61,7 +61,7 @@ _gaq.push(['_trackPageview']);
 <div id="layout-top">
 	<div class="wrapper">
 		<div id="header">
-			<div id="search-bar">
+			<!-- <div id="search-bar">
 				<form action="search" id="search-form" method="get">
 					<div>
 						<input accesskey="q" alt="Search Battle.net" id="search-field" maxlength="35" name="q" tabindex="50" type="text" value="Search Battle.net"/>
@@ -69,7 +69,7 @@ _gaq.push(['_trackPageview']);
 					</div>
 				</form>
 			</div>
-			<h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>
+			<h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>-->
 			<div id="navigation">
 				<div id="page-menu" class="large">
 					<h2><a href="<?php echo BASE_URL ?>#"> <?php echo $cms_lang['13']; ?>
@@ -85,7 +85,7 @@ _gaq.push(['_trackPageview']);
 			</div>
 		</div>
 		<!-- User Panel -->
-		<?php include(WEBKIT.'userpanel.php'); ?>
+		
 		<!-- User Panel END -->
 	</div>
 </div>
@@ -100,7 +100,8 @@ _gaq.push(['_trackPageview']);
 		</div>
 		<div id="page-content">
 			<center>
-				<p class="text-green title"><strong>Sign Out</strong></p>
+				<p class="text-green title"><strong><?php echo$cms_lang[105];?></strong></p>
+				<img align=center src="<?php echo BASE_URL ?>uber-loading.1lnG0.gif" border=0> 
 			</center>
             <?php session_unset(); session_destroy(); ?>
 			<meta http-equiv="refresh" content="3;url=<?php echo BASE_URL ?>"/>
