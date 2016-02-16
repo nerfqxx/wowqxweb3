@@ -23,7 +23,7 @@ $(document).ready(function() {
 })(jQuery);
 
 /**
- * Functionality for all custom UI elements and systems.
+ * Functionality for all custom UI elements and SISTEMAs.
  *
  * @copyright   2010, Blizzard Entertainment, Inc.
  * @class       UI

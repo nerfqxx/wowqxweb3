@@ -1,7 +1,7 @@
 <div id="slideshow" class="ui-slideshow">
         <div class="slideshow">
 			<?php
-			$slideshows = $connect->WebQuery("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
+			$slideshows = $db->Web("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 			$i=0;
 			while($slideshow = $slideshows->fetch_array())
 			{
@@ -36,7 +36,7 @@
         <div class="mask"></div>
     </div>
 		<?php
-		$slideshows = $connect->WebQuery("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
+		$slideshows = $db->Web("SELECT * FROM slideshows ORDER BY id ASC LIMIT 5");
 		?>
 		<script type="text/javascript">
 		//<![CDATA[

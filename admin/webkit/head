@@ -21,7 +21,7 @@
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
-      <script src="common/theme/scripts/plugins/system/html5shiv.js"></script>
+      <script src="common/theme/scripts/plugins/SISTEMA/html5shiv.js"></script>
     <![endif]-->
 	<!--[if IE]><!--><script src="common/theme/scripts/plugins/other/excanvas/excanvas.js"></script><!--<![endif]-->
 	<!--[if lt IE 8]><script src="common/theme/scripts/plugins/other/json2.js"></script><![endif]-->
@@ -33,7 +33,7 @@
 	<!-- DateTimePicker Plugin -->
 	<link href="common/theme/scripts/plugins/forms/bootstrap-datetimepicker/css/datetimepicker.css" rel="stylesheet" />
 	<!-- JQueryUI -->
-	<link href="common/theme/scripts/plugins/system/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+	<link href="common/theme/scripts/plugins/SISTEMA/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
 	<!-- MiniColors ColorPicker Plugin -->
 	<link href="common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" rel="stylesheet" />
 	<!-- Notyfy Notifications Plugin -->
@@ -56,7 +56,7 @@
 	<!-- FireBug Lite -->
 	<!-- <script src="https://getfirebug.com/firebug-lite-debug.js"></script> -->
 	<!-- LESS.js Library -->
-	<script src="common/theme/scripts/plugins/system/less.min.js"></script>
+	<script src="common/theme/scripts/plugins/SISTEMA/less.min.js"></script>
 	
 	<!-- Global -->
 	<script>

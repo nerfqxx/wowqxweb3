@@ -7,7 +7,7 @@
 
 FlameCMS is a *MMORPG* Framework based in PHP & HTML.
 
-It is a newly made from scratch Content Management System so that the members
+It is a newly made from scratch Content Management SISTEMA so that the members
 can register and manage their accounts and so that they Administrator can
 administer his Site with ease.
 It is based on the code of the previous project with extensive changes over time 
@@ -57,7 +57,7 @@ rewrite ^/blog/(.+)/(.+)$ /article.php?id=$1&title=$2;
 ```
 ## Developers CMS
 
-To develop the "CMS" we recommend to activate the option [DEVELOPMENT_ENVIRONMENT](https://github.com/FlameNET/FlameCMS/blob/master/system/config.php#L129)
+To develop the "CMS" we recommend to activate the option [DEVELOPMENT_ENVIRONMENT](https://github.com/FlameNET/FlameCMS/blob/master/sistema/config.php#L129)
 
 ## Reporting issues
 

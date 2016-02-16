@@ -1466,7 +1466,7 @@ var Tickets = {
 };
 
 /**
- * Simple open/hide toggle system.
+ * Simple open/hide toggle SISTEMA.
  */
 var Toggle = {
 

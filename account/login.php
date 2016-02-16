@@ -1,18 +1,18 @@
 <?php session_start();
-require_once('../system/config.php');
+require_once('../sistema/config.php');
 if(isset($_POST['submit']))
 {
 	$email			= trim($_POST['accountName']);
 	$password		= trim($_POST['password']);
     $sha_pass_hash	= sha1(strtoupper($email) . ":" . strtoupper($password));
-	$query			= $connect->WebQuery("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}'");
+	$query			= $db->Web("SELECT * FROM account WHERE email='{$email}' AND password='{$sha_pass_hash}'");
 	$num_row		= $query->num_rows;
 	$row			= $query->fetch_array();
 
 	if( $num_row ==1 )
 	{
 		$_SESSION['email']=$row['email'];
-		header("Location: ".ACCOUNT_URL."management");
+		header("Location: ".CUENTA_URL."management");
 		exit;
 	}
 	else
@@ -121,7 +121,7 @@ Iniciar sesi&oacute;n
 </div>
 <ul id="help-links">
 <li>
-<a class="btn btn-block btn-large" rel="external" href="<?php ACCOUNT_URL ?>register" tabindex="1">
+<a class="btn btn-block btn-large" rel="external" href="<?php CUENTA_URL ?>register" tabindex="1">
 Crear cuenta
 <i class="icon-external-link"></i>
 </a>

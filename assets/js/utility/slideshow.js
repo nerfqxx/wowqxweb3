@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * A slideshow system. Will display a single slide (with a description, title and image) at a time,
+ * A slideshow SISTEMA. Will display a single slide (with a description, title and image) at a time,
  * and will fade between the slides based on a duration. You can manually jump to specific slides.
  */
 var Slideshow = {

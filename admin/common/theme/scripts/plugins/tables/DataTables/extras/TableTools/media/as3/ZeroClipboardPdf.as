@@ -8,9 +8,9 @@ package {
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.external.ExternalInterface;
-	import flash.system.Security;
+	import flash.SISTEMA.Security;
 	import flash.utils.*;
-	import flash.system.System;
+	import flash.SISTEMA.SISTEMA;
 	import flash.net.FileReference;
 	import flash.net.FileFilter;
 	
@@ -42,7 +42,7 @@ package {
 		public function ZeroClipboard() {
 			// constructor, setup event listeners and external interfaces
 			stage.scaleMode = StageScaleMode.EXACT_FIT;
-			flash.system.Security.allowDomain("*");
+			flash.SISTEMA.Security.allowDomain("*");
 			
 			// import flashvars
 			var flashvars:Object = LoaderInfo( this.root.loaderInfo ).parameters;
@@ -149,7 +149,7 @@ package {
 				fileRef.save( pdf.save( Method.LOCAL ), fileName );
 			} else {
 				/* Copy the text to the clipboard. Note charset and BOM have no effect here */
-				System.setClipboard( clipText );
+				SISTEMA.setClipboard( clipText );
 				ExternalInterface.call( 'ZeroClipboard_TableTools.dispatch', domId, 'complete', clipText );
 			}
 		}

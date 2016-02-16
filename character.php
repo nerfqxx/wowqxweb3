@@ -1,6 +1,6 @@
 <!-- DO NOT TOUCH -->
 <?php require_once('webkit/config.php');
-$account->AccountLoginQuery();
+$cuenta->AccountLoginQuery();
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
@@ -3553,7 +3553,7 @@ Your Death Grip spell no longer taunts the target.				</div>
 			heroicMode: true,
 			mythicMode: false,
 			bosses: 	[
-			{ name: "Omnotron Defense System", nKills: 0, nHeroicKills: 1 },
+			{ name: "Omnotron Defense SISTEMA", nKills: 0, nHeroicKills: 1 },
 			{ name: "Magmaw", nKills: 0, nHeroicKills: 1 },
 			{ name: "Atramedes", nKills: 0, nHeroicKills: 1 },
 			{ name: "Chimaeron", nKills: 0, nHeroicKills: 1 },

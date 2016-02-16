@@ -27,8 +27,8 @@ function __autoload($className) {
 		require_once(CLASS_DIR . strtolower($className).'.class.php');
 	}
 }
-$connect	= new Connection();
-$news		= new News();
-$register	= new Users();
-$account	= new Users();
-$url		= new Url();
+$db			= new Conexion();
+$noticia	= new Noticias();
+$registro	= new Usuarios();
+$cuenta		= new Usuarios();
+$sistema	= new Sistema();

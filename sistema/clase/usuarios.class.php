@@ -17,38 +17,39 @@
 * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 **/
 
-class Users extends Connection {
+class Usuarios extends Conexion {
 
 	public function AccountLoginQuery(){
-		
+
 		global $profile;
+		global $SessionEmail;
 		global $profileAuth;
 		global $_SESSION;
-		
+
 		$SessionEmail	= isset($_SESSION['email']) ? $_SESSION['email'] : null;
-		$rankSQL		= $this->WebQuery("SELECT * FROM account where email = '{$SessionEmail}'");
+		$rankSQL		= $this->Web("SELECT * FROM account WHERE email = '{$SessionEmail}'");
 		$profile		= $rankSQL->fetch_assoc();
-		$authSQL		= $this->AuthQuery("SELECT * FROM account where email = '{$SessionEmail}'");
+		$authSQL		= $this->CuentaSQL("SELECT * FROM account WHERE email = '{$SessionEmail}'");
 		$profileAuth	= $authSQL->fetch_assoc();
 	}
 
 	public function AccountLoginCheck(){
-		
+
 		global $profile;
-		
+
 		if($_SESSION['email'] == ''){
-			header("Location: ".ACCOUNT_URL."login");
+			header("Location: ".CUENTA_URL."login");
 			exit();
 		}
 		if($profile['rol'] < 1){
 			die('<center>
 					<h2>What are you doing here?</h2>
 				</center>');
-			header("Location: ".ACCOUNT_URL."login");
+			header("Location: ".CUENTA_URL."login");
 		}
 	}
 
-	public function ConnectSOAP() {
+	public function ConectarSOAP() {
 		
 		$client = new SoapClient(NULL, array(
 		'location' 		=> 'http://'.SOAP_IP.':'.SOAP_PORT.'/',

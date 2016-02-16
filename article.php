@@ -1,12 +1,12 @@
 <!-- DO NOT TOUCH -->
 <?php
-require_once('system/config.php');
+require_once('sistema/config.php');
 
-$account->AccountLoginQuery();
+$cuenta->AccountLoginQuery();
 
 if (isset($_GET['id'])){
-	$news = $connect->WebQuery("SELECT * FROM news WHERE id = '".$_GET['id']."'");
-	$rows = $news->fetch_assoc();
+	$news = $db->Web("SELECT * FROM news WHERE id = '".$_GET['id']."'");
+	$rows = $noticia->fetch_assoc();
 	if (!$rows['id']){ 
 		$error = true;
 	}
@@ -119,7 +119,7 @@ if (isset($_GET['id'])){
 						</div>
 						<div class="keyword-list">
 							<strong>Tags:</strong>
-							<a href="/wow/en/search?k=warlords&amp;f=article">warlords</a>, <a href="/wow/en/search?k=siege%20of%20orgrimmar&amp;f=article">siege of orgrimmar</a>, <a href="/wow/en/search?k=6.0%20systems%20patch&amp;f=article">6.0 systems patch</a>
+							<a href="/wow/en/search?k=warlords&amp;f=article">warlords</a>, <a href="/wow/en/search?k=siege%20of%20orgrimmar&amp;f=article">siege of orgrimmar</a>, <a href="/wow/en/search?k=6.0%20SISTEMAs%20patch&amp;f=article">6.0 SISTEMAs patch</a>
 						</div>
 					</div>
 					<div id="comments" class="bnet-comments ">

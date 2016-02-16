@@ -30,7 +30,7 @@
 		/* -------------------------------------------------------------------- */
 
 		/**
-		 * Space is a simple 3D system.
+		 * Space is a simple 3D SISTEMA.
 		 *
 		 * Y+ = up
 		 * Z+ = into screen
@@ -366,7 +366,7 @@
 			}
 
 			// Depth sorting (warning: this is only enough to drive this demo - feel
-			// free to contribute a better system).
+			// free to contribute a better SISTEMA).
 			this.drawlist.sort(function (poly1, poly2) {
 				return poly2.origin.tz - poly1.origin.tz;
 			});
@@ -395,7 +395,7 @@
 		}
 
 		function load() {
-			// Init drawing system
+			// Init drawing SISTEMA
 			canvas = document.getElementById("cv");
 			ctx = canvas.getContext("2d");
 

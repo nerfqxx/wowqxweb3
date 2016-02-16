@@ -2,7 +2,7 @@
 /**
  * upload.php
  *
- * Copyright 2009, Moxiecode Systems AB
+ * Copyright 2009, Moxiecode SISTEMAs AB
  * Released under GPL License.
  *
  * License: http://www.plupload.com/license

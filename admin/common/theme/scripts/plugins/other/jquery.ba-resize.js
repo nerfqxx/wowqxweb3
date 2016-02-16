@@ -115,7 +115,7 @@
   // While this plugin works in jQuery 1.3.2, if an element's event callbacks
   // are manually triggered via .trigger( 'resize' ) or .resize() those
   // callbacks may double-fire, due to limitations in the jQuery 1.3.2 special
-  // events system. This is not an issue when using jQuery 1.4+.
+  // events SISTEMA. This is not an issue when using jQuery 1.4+.
   // 
   // > // While this works in jQuery 1.4+
   // > $(elem).css({ width: new_w, height: new_h }).resize();

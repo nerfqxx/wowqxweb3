@@ -28,7 +28,7 @@ function setReporting() {
 		error_reporting(E_ALL);
 		ini_set('display_errors','Off');
 		ini_set('log_errors', 'On');
-		ini_set('error_log', SYSTEM.'tmp'.DS.'logs'.DS.'error.log');
+		ini_set('error_log', SISTEMA.'tmp'.DS.'logs'.DS.'error.log');
 	}
 }
 setReporting();

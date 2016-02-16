@@ -1,5 +1,5 @@
 <?php session_start();
-require_once('../system/config.php');
+require_once('../sistema/config.php');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
@@ -45,7 +45,7 @@ Core.shortDateFormat = 'dd/MM/yyyy';
 Core.dateTimeFormat = 'dd/MM/yyyy HH:mm';
 Core.loggedIn = false;
 Core.userAgent = 'web';
-Login.embeddedUrl = '<?php echo ACCOUNT_URL ?>login';
+Login.embeddedUrl = '<?php echo CUENTA_URL ?>login';
 var Flash = Flash || {};
 Flash.videoPlayer = '';
 Flash.videoBase = '';
@@ -72,7 +72,7 @@ _gaq.push(['_trackPageview']);
 			<h1 id="logo"><a accesskey="h" href="" tabindex="50"></a></h1>
 			<div id="navigation">
 				<div id="page-menu" class="large">
-					<h2><a href="<?php echo ACCOUNT_URL ?>#"> <?php echo $cms_lang['13']; ?>
+					<h2><a href="<?php echo CUENTA_URL ?>#"> <?php echo $cms_lang['13']; ?>
 					</a></h2>
 					<h2 class="second-header"></h2>
 					<span class="clear">
@@ -124,7 +124,7 @@ _gaq.push(['_trackPageview']);
 			 */
 			if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-				$checkEmailSQL 	= $connect->WebQuery("SELECT * FROM account WHERE email = '{$email}'");
+				$checkEmailSQL 	= $db->Web("SELECT * FROM account WHERE email = '{$email}'");
 				$checkEmail	= mysqli_num_rows($checkEmailSQL) > 0;
 				if($checkEmail){
 					
@@ -132,18 +132,18 @@ _gaq.push(['_trackPageview']);
 					<center>
 						<p class="text-red title">This Email is already used.</p>
 					</center>
-					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
+					<meta http-equiv="refresh" content="2;url='.CUENTA_URL.'register"/>';
 				}
 				else
 				{
 					// Register Server
-					$register	= $connect->AuthQuery("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('{$username}),'{$sha_pass_hash_server}','{$email}')");
-					$IdAccount	= $connect->AuthQuery("SELECT MAX(id) FROM account");
+					$register	= $db->CuentaSQL("INSERT INTO `account`(`username`,`sha_pass_hash`,`email`) VALUES ( UPPER('{$username}),'{$sha_pass_hash_server}','{$email}')");
+					$IdAccount	= $db->CuentaSQL("SELECT MAX(id) FROM account");
 					$IdWoW		= MysqliResultFlame($IdAccount);
 					// RBAC Account Permissions Server
-					$register	= $connect->AuthQuery("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '{$IdWoW}','195')");
+					$register	= $db->CuentaSQL("INSERT INTO `rbac_account_permissions`(`accountId`,`permissionId`) VALUES ( '{$IdWoW}','195')");
 					// Register CMS
-					$createAccount	= $connect->WebQuery("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})");
+					$createAccount	= $db->Web("INSERT INTO `account`(`first_name`,`last_name`,`email`,`password`,`secret_question`,`answer_question`,`country`,`date_of_birth`,`activation_code`) VALUES ('{$firstName}','{$lastName}','{$email}','{$sha_pass_hash_cms}','{$question}',UPPER('{$answer}'),'{$country }','{$dob}','{$code})");
 					if($createAccount)
 					{
 						$to		  = $email;
@@ -178,7 +178,7 @@ _gaq.push(['_trackPageview']);
 									</p>
 									<h6>You will log in with this email address.</h6>
 									<p>
-										You will be asked for this address when logging into the Battle.net application, web sites, or game clients. You can change this address any time in <a href="'.ACCOUNT_URL.'login" tabindex="1">Account Management</a>.
+										You will be asked for this address when logging into the Battle.net application, web sites, or game clients. You can change this address any time in <a href="'.CUENTA_URL.'login" tabindex="1">Account Management</a>.
 									</p>
 								</div>
 							</div>
@@ -196,7 +196,7 @@ _gaq.push(['_trackPageview']);
 				echo'<center>
 						<p class="text-red title">Email invalid</p>
 					</center>
-					<meta http-equiv="refresh" content="2;url='.ACCOUNT_URL.'register"/>';
+					<meta http-equiv="refresh" content="2;url='.CUENTA_URL.'register"/>';
 			}
 		}else{
 		?>
@@ -215,7 +215,7 @@ _gaq.push(['_trackPageview']);
 					<span class="input-select input-select-small">
 					<select name="country" id="country" class="small border-5 glow-shadow-2" tabindex="1">
 						<?php
-						$country	= $connect->WebQuery("SELECT * FROM countries WHERE id");
+						$country	= $db->Web("SELECT * FROM countries WHERE id");
 						$countries	= isset($_GET['country']) ? $_GET['country'] : null ;
 						while($get	= mysqli_fetch_array($country))
 						{
@@ -237,8 +237,8 @@ _gaq.push(['_trackPageview']);
 						<div id="countryGlobal" class="input-note-content">
 							<p class="caption"><?php echo $cms_lang['101']; ?></p>
 							<p>
-								<a class="ui-button button1" href="<?php echo ACCOUNT_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
-								<a class="ui-cancel " href="<?php echo ACCOUNT_URL ?>register" tabindex="1">
+								<a class="ui-button button1" href="<?php echo CUENTA_URL ?>register" tabindex="1"><span class="button-left"><span class="button-right"><?php echo $cms_lang['16']; ?></span></span></a>
+								<a class="ui-cancel " href="<?php echo CUENTA_URL ?>register" tabindex="1">
 								<span>
 								<?php echo $cms_lang['68']; ?> </span>
 								</a>
@@ -248,8 +248,8 @@ _gaq.push(['_trackPageview']);
 							<p class="caption"><?php echo $cms_lang['102']; ?></p>
 							<p>
 								<a class="ui-button button1" href="?country=CHINA" id="stayTaiwan" tabindex="1"><span class="button-left"><span class="button-right">YES, I HAVE A TAIWANESE WORLD OF WARCRAFT ACCOUNT</span></span></a><br/>
-								<a class="ui-button button1" href="<?php echo ACCOUNT_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
-								<a class="ui-cancel " href="<?php echo ACCOUNT_URL ?>register" tabindex="1">
+								<a class="ui-button button1" href="<?php echo CUENTA_URL ?>register" id="gotoChina" tabindex="1"><span class="button-left"><span class="button-right">GO TO BATTLE.NET IN CHINA</span></span></a>
+								<a class="ui-cancel " href="<?php echo CUENTA_URL ?>register" tabindex="1">
 								<span>
 								<?php echo $cms_lang['68']; ?> </span>
 								</a>

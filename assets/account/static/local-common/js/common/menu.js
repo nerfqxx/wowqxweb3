@@ -105,7 +105,7 @@ var Menu = {
 	},
 
 	/**
-	 * Hide / reset the menu system.
+	 * Hide / reset the menu SISTEMA.
 	 */
 	hide: function() {
 		window.clearTimeout(Menu.timer);

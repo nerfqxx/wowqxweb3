@@ -400,7 +400,7 @@ Time series data
 ================
 
 Time series are a bit more difficult than scalar data because
-calendars don't follow a simple base 10 system. For many cases, Flot
+calendars don't follow a simple base 10 SISTEMA. For many cases, Flot
 abstracts most of this away, but it can still be a bit difficult to
 get the data into Flot. So we'll first discuss the data format.
 
@@ -436,10 +436,10 @@ In PHP you can get an appropriate timestamp with
 'calendar.timegm(datetime_object.timetuple()) * 1000', in .NET with
 something like:
 
-  public static int GetJavascriptTimestamp(System.DateTime input)
+  public static int GetJavascriptTimestamp(SISTEMA.DateTime input)
   {
-    System.TimeSpan span = new System.TimeSpan(System.DateTime.Parse("1/1/1970").Ticks);
-    System.DateTime time = input.Subtract(span);
+    SISTEMA.TimeSpan span = new SISTEMA.TimeSpan(SISTEMA.DateTime.Parse("1/1/1970").Ticks);
+    SISTEMA.DateTime time = input.Subtract(span);
     return (long)(time.Ticks / 10000);
   }
 

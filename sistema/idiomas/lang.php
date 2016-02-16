@@ -19,7 +19,7 @@
 
 /*
 |--------------------------------------------------------------------------|
-| Info: CMS Language System.
+| Info: CMS Language SISTEMA.
 |--------------------------------------------------------------------------|
 | Specifies the Language that your CMS will show.
 | Under Heavy Work. Please do not touch.

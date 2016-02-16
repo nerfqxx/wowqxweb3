@@ -139,10 +139,10 @@
 
 .zh-tw #add-time,.zh-cn #add-time { font-size: 14px; }
 /* beta opt-in */
-.system-specs dt { color: #727272; }
-.system-specs dd { color: #343434; margin: 0 0 1em 0; }
+.SISTEMA-specs dt { color: #727272; }
+.SISTEMA-specs dd { color: #343434; margin: 0 0 1em 0; }
 .optins .caption,
-.system-specs .caption { text-transform: uppercase; margin: 1em 0 1.5em 0; }
+.SISTEMA-specs .caption { text-transform: uppercase; margin: 1em 0 1.5em 0; }
 
 .optin { cursor: pointer; float: left; width: 419px; height: 64px; margin: 10px 20px 10px 0; line-height: 64px; padding: 0 5px; color: #0072A3; font-weight: bold; font-size: 14px; background-image: url("../../images/account/beta-opt-in.4XDXq.jpg"); background-repeat: no-repeat; }
 .optin:hover { color:#014663 }

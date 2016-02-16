@@ -1,8 +1,8 @@
 <?php
 session_start();
-require_once('../../system/config.php');
-$account->AccountLoginQuery();
-$account->AccountLoginCheck();
+require_once('../../sistema/config.php');
+$cuenta->AccountLoginQuery();
+$cuenta->AccountLoginCheck();
 ?> 
 <!-- DO NOT TOUCH -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
@@ -74,7 +74,7 @@ _gaq.push(['_trackPageview']);
 					</div>
 				</form>
 			</div>
-			<h1 id="logo"><a accesskey="h" href="<?php echo ACCOUNT_URL ?>management/" tabindex="50"></a></h1>
+			<h1 id="logo"><a accesskey="h" href="<?php echo CUENTA_URL ?>management/" tabindex="50"></a></h1>
 			<div id="navigation">
 				<div id="page-menu" class="large">
 					<h2><a href="/account/management/"> Account </a></h2>

@@ -4,7 +4,7 @@ In order to upload files to S3 using Flash runtime, one should start by placing 
 crossdomain.xml can be as simple as this:
 
 <?xml version="1.0"?>
-<!DOCTYPE cross-domain-policy SYSTEM "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
+<!DOCTYPE cross-domain-policy SISTEMA "http://www.macromedia.com/xml/dtds/cross-domain-policy.dtd">
 <cross-domain-policy>
 <allow-access-from domain="*" secure="false" />
 </cross-domain-policy>

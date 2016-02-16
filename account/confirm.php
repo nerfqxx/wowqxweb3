@@ -1,5 +1,5 @@
 <?php
-require_once('../system/config.php');
+require_once('../sistema/config.php');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
@@ -102,13 +102,13 @@ _gaq.push(['_trackPageview']);
 			<?php
 			$passkey = filter_var($_GET['passkey'], FILTER_SANITIZE_STRING);
 
-			if($activation = $connect->WebQuery("UPDATE account SET activation_code=NULL WHERE activation_code='{$passkey}'"))
+			if($activation = $db->Web("UPDATE account SET activation_code=NULL WHERE activation_code='{$passkey}'"))
 			{
 				echo '
 				<div class="alert-page ">
 					<div class="alert-page-message success-page">
 						<p class="text-green title">
-							<strong>Your account is now active.<br/>You may now <a href="'.ACCOUNT_URL.'login">Log in</a></strong>
+							<strong>Your account is now active.<br/>You may now <a href="'.CUENTA_URL.'login">Log in</a></strong>
 						</p>
 					</div>
 				</div>';

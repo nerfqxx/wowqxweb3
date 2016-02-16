@@ -1,6 +1,6 @@
 <!-- DO NOT TOUCH -->
-<?php require_once('system/config.php');
-$account->AccountLoginQuery();
+<?php require_once('sistema/config.php');
+$cuenta->AccountLoginQuery();
 ?>
 <html xml:lang="en-us" class="en-us">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">

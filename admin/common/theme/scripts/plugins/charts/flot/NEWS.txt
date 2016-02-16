@@ -258,7 +258,7 @@ Changes:
 - Added pointOffset method for converting a point in data space to an
   offset within the placeholder.
   
-- Plugin system: register an init method in the $.flot.plugins array
+- Plugin SISTEMA: register an init method in the $.flot.plugins array
   to get started, see PLUGINS.txt for details on how to write plugins
   (it's easy). There are also some extra methods to enable access to
   internal state.

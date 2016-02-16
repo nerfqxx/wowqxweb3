@@ -1288,7 +1288,7 @@ return jQuery;
 		var el = document.createElement("div");
 		eventName = "on" + eventName;
 
-		// We only care about the case where non-standard event systems
+		// We only care about the case where non-standard event SISTEMAs
 		// are used, namely in IE. Short-circuiting here helps us to
 		// avoid an eval call (in setAttribute) which can cause CSP
 		// to go haywire. See: https://developer.mozilla.org/en/Security/CSP
@@ -3825,7 +3825,7 @@ var Expr = Sizzle.selectors = {
 				Sizzle.error( match[0] );
 			}
 
-			// TODO: Move to normal caching system
+			// TODO: Move to normal caching SISTEMA
 			match[0] = done++;
 
 			return match;

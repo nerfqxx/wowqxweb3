@@ -5,13 +5,13 @@
 </li>
 <?php if(isset($_SESSION['email'])){ ?>
 <li class="service-cell service-welcome">
-	Welcome, <?php echo isset($profile['first_name']) ? $profile['first_name'] : null ; ?> |  <a href="<?php echo ACCOUNT_URL ?>signout" tabindex="50" accesskey="2">log out</a>
+	Welcome, <?php echo isset($profile['first_name']) ? $profile['first_name'] : null ; ?> |  <a href="<?php echo CUENTA_URL ?>signout" tabindex="50" accesskey="2">log out</a>
 </li>
 <?php
 }else{
 ?>
 <li class="service-cell service-welcome">
-<a href="<?php echo ACCOUNT_URL ?>login.php">Log in</a> or <a href="<?php echo ACCOUNT_URL ?>register">Create an Account</a>
+<a href="<?php echo CUENTA_URL ?>login.php">Log in</a> or <a href="<?php echo CUENTA_URL ?>register">Create an Account</a>
 </li>
 <?php
 }
@@ -20,7 +20,7 @@
 <a href='<?php echo BASE_URL ?>shop/' class="service-link" data-action="Shop">Shop</a>
 </li>
 <li class="service-cell service-account">
-<a href='<?php echo ACCOUNT_URL ?>/management/' class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
+<a href='<?php echo CUENTA_URL ?>/management/' class="service-link" tabindex="50" accesskey="3" data-action="Account">Account</a>
 </li>
 <li class="service-cell service-support service-support-enhanced">
 <a href="#support" class="service-link service-link-dropdown" tabindex="50" accesskey="4" id="support-link" onclick="return false" style="cursor: progress" rel="javascript" data-action="Support - Support">Support<span class="no-support-tickets" id="support-ticket-count"></span></a>
@@ -73,7 +73,7 @@ shim.style.display = 'block';
 </a>
 </li>
 <li>
-<a href="<?php echo ACCOUNT_URL ?>management/" tabindex="55" data-action="Explore - Account">
+<a href="<?php echo CUENTA_URL ?>management/" tabindex="55" data-action="Explore - Account">
 <strong class="explore-caption">Account</strong>
 </a>
 </li>

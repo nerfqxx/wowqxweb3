@@ -204,7 +204,7 @@ version 1.3.1 (9/30/09)
 
 version 1.3 (9/21/09)
 	- different 'views': month/basicWeek/basicDay
-	- more flexible 'header' system for buttons
+	- more flexible 'header' SISTEMA for buttons
 	- themable by jQuery UI themes
 	- resizable events (require jQuery UI resizable plugin)
 	- rescoped & rewritten CSS, enhanced default look

@@ -3,7 +3,7 @@
 <div class="right-sidebar">
 	<!-- Players Online / Status Bar-->
 	<?php
-	$RealmQuerySQL = $connect->WebQuery("SELECT * FROM realms WHERE Id");
+	$RealmQuerySQL = $db->Web("SELECT * FROM realms WHERE Id");
 	while($Realm = $RealmQuerySQL->fetch_array()){
 	?>
 	<div class="sts a-realm sidebar-container box-shadow">
@@ -18,14 +18,14 @@
 		<div id="body" class="clearfix text-shadow">
 			<p id="online">
 				<?php
-				$OnlineQuerySQL = $connect->Characters()->query("SELECT COUNT(*) FROM characters WHERE online='1'");
+				$OnlineQuerySQL = $db->Characters()->query("SELECT COUNT(*) FROM characters WHERE online='1'");
 				$OnlinePlayers	= MysqliResultFlame($OnlineQuerySQL);
 				?>
 				<font color="#d28010"><?php echo $OnlinePlayers ?></font> Players Online
 			</p>
 			<p id="uptime">
 				<?php
-				$sql = $connect->AuthQuery("SELECT * FROM `uptime` WHERE realmid='{$Realm['Id']}' ORDER BY `starttime` DESC LIMIT 1");  
+				$sql = $db->CuentaSQL("SELECT * FROM `uptime` WHERE realmid='{$Realm['Id']}' ORDER BY `starttime` DESC LIMIT 1");  
 				$uptime_results = $sql->fetch_array();    
 
 				if ($uptime_results['uptime'] > 2592000){

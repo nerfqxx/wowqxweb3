@@ -1,4 +1,4 @@
-<?php require_once('system/config.php'); ?>
+<?php require_once('sistema/config.php'); ?>
 <!doctype html>
 <html>
 <title>Site Maintenance</title>

@@ -1,5 +1,5 @@
 <?php
-require_once('../system/config.php');
+require_once('../sistema/config.php');
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" class="en-gb">
 <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
