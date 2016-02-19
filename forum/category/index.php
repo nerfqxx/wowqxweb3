@@ -59,9 +59,15 @@ include_once("functions.d/GetForumTheme.php");
                         <?php
                         if ($_GET['f'] != "") {
                             $forumid = intval($_GET['f']);
+<<<<<<< HEAD
                             $get_forum = $db->Web("SELECT * FROM aquaflame2.forum_forums WHERE id = '" . $forumid . "'");
                             $forum = mysql_fetch_assoc($get_forum) or $error = 1;
                             $get_category = $db->Web("SELECT * FROM aquaflame2.forum_categ WHERE id = '" . $forum['categ'] . "'");
+=======
+                            $get_forum = mysql_query("SELECT * FROM forum_forums WHERE id = '" . $forumid . "'");
+                            $forum = mysql_fetch_assoc($get_forum) or $error = 1;
+                            $get_category = mysql_query("SELECT * FROM forum_categ WHERE id = '" . $forum['categ'] . "'");
+>>>>>>> origin/master
                             $category = mysql_fetch_assoc($get_category) or $error = 1;
                             if (isset($_GET['page'])) {
                                 $page = intval($_GET['page']);
@@ -70,6 +76,7 @@ include_once("functions.d/GetForumTheme.php");
                             }
                             $news_second = ($page - 1) * 20;
                             if ($page == 1) {
+<<<<<<< HEAD
                                 $get_threads = $db->Web("SELECT * FROM aquaflame2.forum_threads WHERE forumid = '" . $forum['id'] . "' ORDER by last_date DESC LIMIT 20");
                             } else {
                                 $get_threads = $db->Web("SELECT * FROM aquaflame2.forum_threads WHERE forumid = '" . $forum['id'] . "' ORDER by last_date DESC LIMIT 20,$news_second");
@@ -80,13 +87,27 @@ include_once("functions.d/GetForumTheme.php");
                             echo '
 	<li>
 		<a href="/" rel="np">WoW Qx Server
+=======
+                                $get_threads = mysql_query("SELECT * FROM forum_threads WHERE forumid = '" . $forum['id'] . "' ORDER by last_date DESC LIMIT 20");
+                            } else {
+                                $get_threads = mysql_query("SELECT * FROM forum_threads WHERE forumid = '" . $forum['id'] . "' ORDER by last_date DESC LIMIT 20,$news_second");
+                            }
+                            $get_allthreads = mysql_query("SELECT * FROM forum_threads WHERE forumid = '" . $forum['id'] . "'");
+                            echo '
+	<li>
+		<a href="' . $website['root'] . 'index.php" rel="np">WoW Server
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?></span></a>
 		
 	</li>
 	<li>
+<<<<<<< HEAD
 		<a href="forum/" rel="np">Foros
+=======
+		<a href="' . $website['root'] . 'forum/" rel="np">Foros
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name">
@@ -95,7 +116,11 @@ include_once("functions.d/GetForumTheme.php");
 		
 	</li>
 		<li>
+<<<<<<< HEAD
 		<a href="forum/" rel="np">' . $category['name'] . '
+=======
+		<a href="' . $website['root'] . 'forum/" rel="np">' . $category['name'] . '
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?>
@@ -145,7 +170,11 @@ include_once("functions.d/GetForumTheme.php");
                         } else {
                             ?>
                             <div class="forum-options">
+<<<<<<< HEAD
                                 <a href="javascript:;" onClick="Cms.Forum.setView('simple', this)">Avanzado</a>
+=======
+                                <a href="javascript:;" onClick="Cms.Forum.setView('simple', this)"><?php echo $Forum['Forum39'] ?></a>
+>>>>>>> origin/master
                                 <a href="javascript:;" class="active" onClick="Cms.Forum.setView('advanced', this)"><?php echo $Forum['Forum38'] ?></a>
                             </div>
 
@@ -175,7 +204,11 @@ include_once("functions.d/GetForumTheme.php");
                                                         <a href="#">Next &gt;</a>-->
                                     </div>
 
+<<<<<<< HEAD
                                     <a class="ui-button button1 imgbutton " href="forum/"><span><span><span class="back-arrow"> </span></span></span></a>
+=======
+                                    <a class="ui-button button1 imgbutton " href="<?php echo $website['root'] . 'forum'; ?>"><span><span><span class="back-arrow"> </span></span></span></a>
+>>>>>>> origin/master
                                     <?php
                                     if (isset($_SESSION['username'])) {
                                         if ($forum['locked'] == 1) {
@@ -199,7 +232,11 @@ include_once("functions.d/GetForumTheme.php");
                                             echo'<a class="ui-button button1" href="create-topic/?f=' . $forumid . '"><span><span>' . $Forum['Forum40'] . '</span></span></a>';
                                         }
                                     } else {
+<<<<<<< HEAD
                                         echo '<a class="ui-button button1 disabled"><span><span>Crear Tema nuevo</span></span></a>';
+=======
+                                        echo '<a class="ui-button button1 disabled"><span><span>' . $Forum['Forum40'] . '</span></span></a>';
+>>>>>>> origin/master
                                     }
                                     ?>
                                     <span class="clear"><!-- --></span>
@@ -210,18 +247,30 @@ include_once("functions.d/GetForumTheme.php");
                                 <table id="posts" cellspacing="0" class="advanced">
                                     <tr class="post-th">
                                         <td></td>
+<<<<<<< HEAD
                                         <td colspan="2">T&iacutetulo</td>
                                         <td>Autor</td>
                                         <td class="replies">Respuestas</td>
                                         <td class="views">Visitas</td>
                                         <td class="poster">&uacuteltimo Posteador</td>
+=======
+                                        <td colspan="2"><?php echo $Forum['Forum48'] ?></td>
+                                        <td><?php echo $Forum['Forum49'] ?></td>
+                                        <td class="replies"><?php echo $Forum['Forum41'] ?></td>
+                                        <td class="views"><?php echo $Forum['Forum42'] ?></td>
+                                        <td class="poster"><?php echo $Forum['Forum43'] ?></td>
+>>>>>>> origin/master
                                     </tr>
                                     <?php
                                     if (mysql_num_rows($get_threads) == 0) {
                                         echo '
 					<tr>
 					<td class="post-icon"><div class="forum-post-icon"></div></td>
+<<<<<<< HEAD
 					<td class="post-title">&uacuteltimo Posteador</td>
+=======
+					<td class="post-title">' . $Forum['Forum43'] . '</td>
+>>>>>>> origin/master
 					<td class="post-pageNav"></td>
 					<td class="post-author"></td>
 						<td class="post-replies"></td>

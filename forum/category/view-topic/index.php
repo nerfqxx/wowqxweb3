@@ -4,6 +4,7 @@ $page_cat = "forums";
 
 if (isset($_POST['s_move'])) {
     mysql_select_db($server_db);
+<<<<<<< HEAD
     $move = mysql_query("UPDATE aquaflame2.forum_threads SET forumid = '" . intval($_POST['t_move']) . "' WHERE id = '" . intval($_GET['t']) . "'");
 }
 ?>
@@ -14,22 +15,48 @@ if (isset($_POST['s_move'])) {
     <link rel="shortcut icon" href="wow/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>
     <link rel="search" type="application/opensearchdescription+xml" href="http://eu.battle.net/en-gb/data/opensearch" title="Battle.net Search" />
     <link rel="stylesheet" type="text/css" media="all" href="wow/static/local-common/css/common.css?v37" />
+=======
+    $move = mysql_query("UPDATE forum_threads SET forumid = '" . intval($_POST['t_move']) . "' WHERE id = '" . intval($_GET['t']) . "'");
+}
+?>
+<head>
+    <title><?php echo $website['title']; ?></title>
+    <meta content="false" http-equiv="imagetoolbar" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <link rel="shortcut icon" href="<?php echo $website['root']; ?>wow/static/local-common/images/favicons/wow.ico" type="image/x-icon"/>
+    <link rel="search" type="application/opensearchdescription+xml" href="http://eu.battle.net/en-gb/data/opensearch" title="Battle.net Search" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $website['root']; ?>wow/static/local-common/css/common.css?v37" />
+>>>>>>> origin/master
     <!--[if IE]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common-ie.css?v37" /><![endif]-->
     <!--[if IE 6]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common-ie6.css?v37" /><![endif]-->
     <!--[if IE 7]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/local-common/css/common-ie7.css?v37" /><![endif]-->
     <link title="World of Warcraft - News" href="/wow/en/feed/news" type="application/atom+xml" rel="alternate"/>
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" media="all" href="wow/static/css/wow.css?v19" />
     <link rel="stylesheet" type="text/css" media="all" href="wow/static/local-common/css/cms/forums.css?v37" />
     <link rel="stylesheet" type="text/css" media="all" href="wow/static/local-common/css/cms/cms-common.css?v37" />
     <link rel="stylesheet" type="text/css" media="all" href="wow/static/css/cms.css?v19" />
+=======
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $website['root']; ?>wow/static/css/wow.css?v19" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $website['root']; ?>wow/static/local-common/css/cms/forums.css?v37" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $website['root']; ?>wow/static/local-common/css/cms/cms-common.css?v37" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php echo $website['root']; ?>wow/static/css/cms.css?v19" />
+>>>>>>> origin/master
     <!--[if IE 6]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/cms-ie6.css?v19" /><![endif]-->
     <!--[if IE]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow-ie.css?v19" /><![endif]-->
     <!--[if IE 6]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow-ie6.css?v19" /><![endif]-->
     <!--[if IE 7]> <link rel="stylesheet" type="text/css" media="all" href="/wow/static/css/wow-ie7.css?v19" /><![endif]-->
+<<<<<<< HEAD
     <script type="text/javascript" src="wow/static/local-common/js/third-party/jquery.js?v37"></script>
     <script type="text/javascript" src="wow/static/local-common/js/core.js?v37"></script>
     <script type="text/javascript" src="wow/static/local-common/js/tooltip.js?v37"></script>
     <script type="text/javascript" src="wow/static/local-common/js/bml.js"></script>
+=======
+    <script type="text/javascript" src="<?php echo $website['root']; ?>wow/static/local-common/js/third-party/jquery.js?v37"></script>
+    <script type="text/javascript" src="<?php echo $website['root']; ?>wow/static/local-common/js/core.js?v37"></script>
+    <script type="text/javascript" src="<?php echo $website['root']; ?>wow/static/local-common/js/tooltip.js?v37"></script>
+    <script type="text/javascript" src="<?php echo $website['root']; ?>wow/static/local-common/js/bml.js"></script>
+>>>>>>> origin/master
     <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
     <!--[if IE 6]> <script type="text/javascript">//<![CDATA[try { document.execCommand('BackgroundImageCache', false, true) } catch(e) {}//]]></script><![endif]-->
 
@@ -63,7 +90,11 @@ if (isset($_POST['s_move'])) {
     </script>
 
     <meta name="title" content="Im looking for someone to play with" />
+<<<<<<< HEAD
     <link rel="image_src" href="wow/static/images/icons/facebook/article.jpg" />
+=======
+    <link rel="image_src" href="<?php echo $website['root']; ?>wow/static/images/icons/facebook/article.jpg" />
+>>>>>>> origin/master
 </head>
 <body class="en-gb logged-in">
 
@@ -73,7 +104,11 @@ if (isset($_POST['s_move'])) {
     ?>
 
     <div id="wrapper">
+<<<<<<< HEAD
         
+=======
+        <?php include("../../../header.php"); ?>
+>>>>>>> origin/master
         <div id="content">
             <div class="content-top">
                 <div class="content-trail">
@@ -84,6 +119,7 @@ if (isset($_POST['s_move'])) {
                             $threadid = intval($_GET['t']);
                             $ndate = date('Y-m-d H:i:s');
 
+<<<<<<< HEAD
                             $thread = $db->Web("SELECT * FROM forum_threads WHERE id = '" . $threadid . "'") or $error = 1;
                             $postid = $db->Web("SELECT * FROM forum_posts WHERE type = 1 AND postid = '" . $thread['id'] . "'");
                             $update = $db->Web("UPDATE forum_threads SET views = views + 1 WHERE id = '" . $thread['id'] . "'");
@@ -91,32 +127,57 @@ if (isset($_POST['s_move'])) {
                             $category = $db->Web("SELECT * FROM forum_categ WHERE id = '" . $forum['categ'] . "'") or $error = 1;
                             if (isset($_SESSION['username'])) {
                                 $userInfo = $db->Web("SELECT * FROM users WHERE id = '" . $account_information['id'] . "'");
+=======
+                            $thread = mysql_fetch_assoc(mysql_query("SELECT * FROM forum_threads WHERE id = '" . $threadid . "'")) or $error = 1;
+                            $postid = mysql_fetch_assoc(mysql_query("SELECT * FROM forum_posts WHERE type = 1 AND postid = '" . $thread['id'] . "'"));
+                            $update = mysql_query("UPDATE forum_threads SET views = views + 1 WHERE id = '" . $thread['id'] . "'");
+                            $forum = mysql_fetch_assoc(mysql_query("SELECT * FROM forum_forums WHERE id = '" . $thread['forumid'] . "'")) or $error = 1;
+                            $category = mysql_fetch_assoc(mysql_query("SELECT * FROM forum_categ WHERE id = '" . $forum['categ'] . "'")) or $error = 1;
+                            if (isset($_SESSION['username'])) {
+                                $userInfo = mysql_fetch_assoc(mysql_query("SELECT * FROM users WHERE id = '" . $account_information['id'] . "'"));
+>>>>>>> origin/master
                             }
 
                             echo '
 	<li>
+<<<<<<< HEAD
 		<a href="/" rel="np">WoW Qx Server
+=======
+		<a href="' . $website['root'] . 'index.php" rel="np">WoW Server
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?></span></a>
 		
 	</li>
 	<li>
+<<<<<<< HEAD
 		<a href="forum/" rel="np">Foro
+=======
+		<a href="' . $website['root'] . 'forum/" rel="np">'.$Forums['Forums'].'
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?></span></a>
 		
 	</li>
 	<li>
+<<<<<<< HEAD
 		<a href="forum/" rel="np">' . $category['name'] . '
+=======
+		<a href="' . $website['root'] . 'forum/" rel="np">' . $category['name'] . '
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?></span></a>
 		
 	</li>
 	<li>
+<<<<<<< HEAD
 		<a href="forum/" rel="np">' . $forum['name'] . '
+=======
+		<a href="' . $website['root'] . 'forum/" rel="np">' . $forum['name'] . '
+>>>>>>> origin/master
 		</a>
 		<a rel="np" class="breadcrumb-arrow" itemprop="url">
 			<span class="breadcrumb-text" itemprop="name"><?php echo TITLE ?></span></a>
@@ -130,7 +191,11 @@ if (isset($_POST['s_move'])) {
 
                         if ($error == 1) {
                             echo '
+<<<<<<< HEAD
 	<li><a href="/" rel="np">Foro - WoW Qx Server</a></li>
+=======
+	<li><a href="' . $website['root'] . 'index.php" rel="np">' . $website['title'] . '</a></li>
+>>>>>>> origin/master
 	<li class="last"><a href="index.php" rel="np">Forums</a></li>
 	';
                         } else {
@@ -181,7 +246,11 @@ if (isset($_POST['s_move'])) {
 				background: url("../wow/static/images/loaders/canvas-loader.gif") no-repeat;
 			   }
 			</style>
+<<<<<<< HEAD
 			<center>El tema no existe...<br /><br /><div class="loader"> </div><br />Redireccionando...</center>
+=======
+			<center>' . $Forum['Forum59'] . '<br /><br /><div class="loader"> </div><br />' . $Forum['Forum37'] . '</center>
+>>>>>>> origin/master
 			<meta http-equiv="refresh" content="2;url=../index.php"/>
 			';
                         } else {
@@ -787,6 +856,10 @@ if (isset($_POST['s_move'])) {
             </div>
         </div>
     </div>
+<<<<<<< HEAD
     <?php include("../../../sistema/webkit/footer.php"); ?>
+=======
+    <?php include("../../../footer.php"); ?>
+>>>>>>> origin/master
 </body>
 </html>
