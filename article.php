@@ -6,7 +6,7 @@ $cuenta->AccountLoginQuery();
 
 if (isset($_GET['id'])){
 	$news = $db->Web("SELECT * FROM news WHERE id = '".$_GET['id']."'");
-	$rows = $noticia->fetch_assoc();
+	$rows = $news->fetch_assoc();
 	if (!$rows['id']){ 
 		$error = true;
 	}
@@ -23,7 +23,7 @@ if (isset($_GET['id'])){
 <!-- Description of CMS -->
 <?php include(WEBKIT.'desc.php'); ?>
 <!-- Description of CMS END -->
-<title><?php echo $rows['title'].' - '.$rows['date'].' - '.TITLE ?></title>
+<title><?php echo $rows['title'].' - '.TITLE ?></title>
 <!-- The Styles & Javascripts of the CMS -->
 <?php include(WEBKIT.'core.php'); ?>
 <!-- The Styles & Javascripts of the CMS END -->
@@ -37,7 +37,7 @@ if (isset($_GET['id'])){
 		<!-- Search -->
 		<?php include(WEBKIT.'search.php'); ?>
 		<!-- Search END -->
-		<h1 id="logo"><a href="/wow/en/"><?php echo TITLE ?>
+		<h1 id="logo"><a href="/"><?php echo TITLE ?>
 		</a></h1>
 		<!-- Header -->
 		<div class="header-plate">
@@ -54,13 +54,18 @@ if (isset($_GET['id'])){
 			<div class="content-trail">
 				<ol class="ui-breadcrumb">
 					<li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<a href="/wow/en/" rel="np" class="breadcrumb-arrow" itemprop="url">
-							<span class="breadcrumb-text" itemprop="name">World of Warcraft</span>
+						<a href="/" rel="np" class="breadcrumb-arrow" itemprop="url">
+							<span class="breadcrumb-text" itemprop="name">WoW Qx Server</span>
+						</a>
+					</li>
+					<li itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+						<a href="/" rel="np" class="breadcrumb-arrow" itemprop="url">
+							<span class="breadcrumb-text" itemprop="name">Noticias</span>
 						</a>
 					</li>
 					<li class="last" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
-						<a href="/wow/en/blog/14014199/siege-of-orgrimmar-changes-in-patch-60-and-warlords-of-draenor-06-05-2014" rel="np" itemprop="url">
-							<span class="breadcrumb-text" itemprop="name">Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor</span>
+						<a href="<?php echo BASE_URL.'blog/'.$rows['id'].'/'.$sistema->Enlace($rows['title']); ?>" rel="np" itemprop="url">
+							<span class="breadcrumb-text" itemprop="name"><?php echo $rows['title']; ?></span>
 						</a>
 					</li>
 				</ol>
@@ -69,24 +74,24 @@ if (isset($_GET['id'])){
 				<?php include (WEBKIT.'sidebar.php'); ?>
 				<div class="left-content">
 					<div id="blog" class="article-wrapper" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-						<h2 class="header-2"><span itemprop="headline">Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor</span></h2>
+						<h2 class="header-2"><span itemprop="headline"><?php echo $rows['title']; ?></span></h2>
 						<div class="article-meta">
-							<a class="article-author" href="/wow/en/search?a=Blizzard%20Entertainment&amp;f=article">
+							<a class="article-author" href="#">
 								<span class="author-icon"></span>
 									<span itemprop="author"><?php echo $rows['author']; ?>
 								</span>
 							</a>
-							<span class="publish-date" title="06 May 2014 14:00 BST">06/05/2014 </span>
+							<span class="publish-date" title=""><?php echo $rows['date']; ?></span>
 							<a href="#comments" class="comments-link"><?php echo $rows['comments']; ?></a>
 						</div>
 						<meta itemprop="datePublished" content="2014-05-06T14:00:00+01"/>
 						<meta itemprop="dateModified" content="2014-05-06T14:17:18+01"/>
 						<meta itemprop="inLanguage" content="en-GB"/>
 						<meta itemprop="interactionCount" content="UserComments:106"/>
-						<meta itemprop="thumbnailUrl" content="//bnetcmsus-a.akamaihd.net/cms/connect_thumbnail/471I1UWMFKPQ1384811769562.jpg"/>
+						<meta itemprop="thumbnailUrl" content=""/>
 						<div class="article-content">
 							<div class="header-image">
-								<img itemprop="image" alt="Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor" src="//bnetcmsus-a.akamaihd.net/cms/blog_header/B62ZF0FW1MFZ1384811756770.jpg"/>
+								<img itemprop="image" alt="Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor" src="/assets/images/news/<?php echo $rows['image']; ?>_header.jpg"/>
 							</div>
 							<div class="detail" itemprop="articleBody">
 								<?php echo  html_entity_decode($rows['content']); ?>
@@ -94,23 +99,23 @@ if (isset($_GET['id'])){
 						</div>
 						<div class="community-share">
 							<div class="share-wrapper">
-								<div class="share-links">
+								<!--<div class="share-links">
 									<a class="facebook" href="https://www.facebook.com/sharer.php?u=http://eu.battle.net/wow/en/blog/14014199/siege-of-orgrimmar-changes-in-patch-60-and-warlords-of-draenor-06-05-2014" onclick="Core.trackEvent('wow- SNS', 'Sharing - Facebook', 'blog 14014199 - en-gb'); window.open(this.href,'','height=450,width=550').focus(); return false;" title="Facebook"></a>
 									<a class="twitter" href="http://twitter.com/share?http://eu.battle.net/wow/en/blog/14014199/siege-of-orgrimmar-changes-in-patch-60-and-warlords-of-draenor-06-05-2014" onclick="Core.trackEvent('wow- SNS', 'Sharing - Twitter', 'blog 14014199 - en-gb'); window.open(this.href,'','height=450,width=550').focus(); return false;" title="Twitter"></a>
 									<a class="reddit" href="http://www.reddit.com/submit?url=http://eu.battle.net/wow/en/blog/14014199/siege-of-orgrimmar-changes-in-patch-60-and-warlords-of-draenor-06-05-2014" onclick="Core.trackEvent('wow- SNS', 'Sharing - Reddit', 'blog 14014199 - en-gb'); window.open(this.href,'','height=auto,width=auto').focus(); return false;" title="Reddit"></a>
 									<span class="clear">
-									<!-- -->
+									<!-- 
 									</span>
 								</div>
-								<span class="share-title">Share:</span>
+								<span class="share-title">Compartir:</span>-->
 							</div>
 							<div class="like-wrapper">
-								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://eu.battle.net/wow/en/blog/14014199/siege-of-orgrimmar-changes-in-patch-60-and-warlords-of-draenor-06-05-2014" data-lang="en" data-text="Siege of Orgrimmar Changes in Patch 6.0 and Warlords of Draenor" data-hashtags="wow">Tweet</a>
+								<a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo BASE_URL.'blog/'.$rows['id'].'/'.$sistema->Enlace($rows['title']); ?>" data-lang="es" data-text="<?php echo $rows['title']; ?>" data-hashtags="wowqx">Tweet</a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 							</div>
 							<script type="text/javascript">
 							//<![CDATA[
-							Core.appendFrame("https://www.facebook.com/plugins/like.php?href=http://eu.battle.net/wow/en/blog/14014199/siege-of-orgrimmar-changes-in-patch-60-and-warlords-of-draenor-06-05-2014&amp;layout=button_count&amp;show_faces=false&amp;width=200&amp;height=20&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;locale=en_GB", 200, 20, $('.like-wrapper'), "facebook-like");
+							Core.appendFrame("https://www.facebook.com/plugins/like.php?href=<?php echo BASE_URL.'blog/'.$rows['id'].'/'.$sistema->Enlace($rows['title']); ?>;layout=button_count&amp;show_faces=false&amp;width=900&amp;height=20&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;locale=es_ES", 900, 20, $('.like-wrapper'), "facebook-like");
 							//]]>
 							</script>
 							<span class="clear">
@@ -119,21 +124,22 @@ if (isset($_GET['id'])){
 						</div>
 						<div class="keyword-list">
 							<strong>Tags:</strong>
-							<a href="/wow/en/search?k=warlords&amp;f=article">warlords</a>, <a href="/wow/en/search?k=siege%20of%20orgrimmar&amp;f=article">siege of orgrimmar</a>, <a href="/wow/en/search?k=6.0%20SISTEMAs%20patch&amp;f=article">6.0 SISTEMAs patch</a>
+							<!--<a href="/wow/en/search?k=warlords&amp;f=article">warlords</a>, <a href="/wow/en/search?k=siege%20of%20orgrimmar&amp;f=article">siege of orgrimmar</a>, <a href="/wow/en/search?k=6.0%20SISTEMAs%20patch&amp;f=article">6.0 SISTEMAs patch</a>-->
+							<a href="#">en contruccion...</a>,
 						</div>
 					</div>
 					<div id="comments" class="bnet-comments ">
-						<h2 class="subheader-2">Loading Comments…</h2>
-						<h2 class="hide">An error has occurred loading comments.</h2>
+						<h2 class="subheader-2">Cargando comentarios...</h2>
+						<h2 class="show">Ha ocurrido un error al cargar los comentarios.</h2>
 						<div class="comments-loading">
 						</div>
-						<script type="text/javascript">
+						<!--<script type="text/javascript">
 						//<![CDATA[
 						$(function() {
 						Comments.initialize('eu.en_gb.blog.14014199', '2f92a1439664ab2b2f960a9e898adff3', '0');
 						});
 						//]]>
-						</script>
+						</script>-->
 					</div>
 				</div>
 				<span class="clear">
