@@ -70,9 +70,9 @@ define('SOAP_KEY',		'abcdefghijklmnopqrstuvwxyz0123456789');
 |--------------------------------------------------------------------------|
 */
 define('REALMLIST',		'wowserver.sytes.net');
-define('BASE_URL',		'http://localhost/qx/');
-define('ADMIN_URL',		'http://localhost/qx/admin/');
-define('CUENTA_URL',	'http://localhost/qx/account/');
+define('BASE_URL',		'http://wowserver.sytes.net/');
+define('ADMIN_URL',		'http://wowserver.sytes.net/admin/');
+define('CUENTA_URL',	'http://wowserver.sytes.net/account/');
 define('TIMEZONE',		'America/Costa_Rica');
 
 /*

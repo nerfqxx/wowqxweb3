@@ -20,12 +20,12 @@
 class Conexion {
 
 	private $db_host = "127.0.0.1";  // Cambiar host según sea necesario
-	private $db_user = "root";  // Cambiar usuario según sea necesario
-	private $db_pass = "marlene92";  // Cambiar contraseña según sea necesario
-	private $db_name = "qx";	// Cambiar nombre según sea necesario
-	private $db_auth = "auth";	// Cambiar auth según sea necesario
-	private $db_chars= "characters";	// Cambiar personaje según sea necesario
-	private $db_world= "world";	// Cambiar mundo según sea necesario
+	private $db_user = "raiz";  // Cambiar usuario según sea necesario
+	private $db_pass = "6713";  // Cambiar contraseña según sea necesario
+	private $db_name = "aquaflame2";	// Cambiar nombre según sea necesario
+	private $db_auth = "auth_lk";	// Cambiar auth según sea necesario
+	private $db_chars= "characters_lk";	// Cambiar personaje según sea necesario
+	private $db_world= "world_lk";	// Cambiar mundo según sea necesario
 
 	/**
 	* Establecimiento de la conexión de base de datos

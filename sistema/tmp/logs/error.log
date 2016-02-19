@@ -1,0 +1,31 @@
+[18-Feb-2016 23:49:53 America/Costa_Rica] PHP Fatal error:  Cannot use object of type mysqli_result as array in D:\xampp\wowqxweb3\forum\category\view-topic\index.php on line 88
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 8
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 11
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 13
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 14
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 15
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 16
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 17
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 18
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 19
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 20
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 21
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 22
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 23
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 24
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 25
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 26
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 27
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 28
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 37
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 38
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 48
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: website in D:\xampp\wowqxweb3\forum\category\index.php on line 49
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  include(../../header2.php): failed to open stream: No such file or directory in D:\xampp\wowqxweb3\forum\category\index.php on line 54
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  include(): Failed opening '../../header2.php' for inclusion (include_path='.;D:\xampp\php\PEAR') in D:\xampp\wowqxweb3\forum\category\index.php on line 54
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in D:\xampp\wowqxweb3\forum\category\index.php on line 63
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in D:\xampp\wowqxweb3\forum\category\index.php on line 65
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Notice:  Undefined variable: Forum in D:\xampp\wowqxweb3\forum\category\index.php on line 149
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in D:\xampp\wowqxweb3\forum\category\index.php on line 157
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in D:\xampp\wowqxweb3\forum\category\index.php on line 220
+[19-Feb-2016 00:00:04 America/Costa_Rica] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in D:\xampp\wowqxweb3\forum\category\index.php on line 373
